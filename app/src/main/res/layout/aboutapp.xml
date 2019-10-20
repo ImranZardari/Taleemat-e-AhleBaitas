@@ -61,7 +61,7 @@
             android:layout_marginTop="05dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This Application Provide Hadiths(Hadees), Aqwal And Solutions About Life Problems"
+            android:text="This Application Provide Hadiths(Hadees), Aqwals And Solutions About Life Problems"
             android:textSize="15sp"
             android:textStyle="bold"
             android:textAlignment="textStart"
