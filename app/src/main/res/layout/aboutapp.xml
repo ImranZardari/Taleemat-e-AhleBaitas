@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+
+   >
+
+
+
+
+    <ImageView
+
+        android:id="@+id/mainimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mainimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wazaif-E-Ahle Bait A.s"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About App"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This Application Provide Hadiths(Hadees), Aqwal And Solutions About Life Problems"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credits :"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+
+            />
+
+
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Wazaifs Are Taken From Syed Mehrban Ali Shamsi Sabzwari Tabrezi Website"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+
+            />
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Powered By : Nano Dev Lab "
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#A52A2A"
+            android:textAlignment="center"
+           android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/closebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:text="Close"
+            android:backgroundTint="@color/graylight"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

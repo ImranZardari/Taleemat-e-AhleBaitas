@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circualr"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logomain"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#8BC34A"
+        app:civ_shadow_radius="0" />
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/circualr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developer : Imran Ali"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About me"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+
+            />
+
+
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I am Programmer,Developer at Nano Dev Lab... "
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+
+            />
+
+        <TextView
+            android:id="@+id/callidno"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact : +923063246643"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            />
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credits :"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+
+            />
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Thanks to \nDev : Mudasir Hussain"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+
+            />
+
+        <TextView
+
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Thanks to \nGraphics Designer : Rashid Ali"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/closebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/graylight"
+            android:text="Close" />
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
