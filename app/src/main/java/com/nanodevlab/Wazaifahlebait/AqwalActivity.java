@@ -19,19 +19,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.util.ArrayList;
-
 import java.util.Collections;
 import java.util.List;
 
 public class AqwalActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
-
     private RecyclerView.LayoutManager layoutManager;
     private ProgressBar mProgressCircle;
-
     private DatabaseReference mDatabaseRef;
     public  List<String> mUploads;
     private DatabaseReference mDatabaseOffline;
@@ -47,15 +43,13 @@ public class AqwalActivity extends AppCompatActivity {
         mProgressCircle = findViewById(R.id.progress_circle);
 
         mRecyclerView = findViewById(R.id.recycler_view);
-
         layoutManager =new GridLayoutManager(this,2);
-
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(layoutManager);
 
         mUploads =new ArrayList<>();
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference("uploads").child("17it54");
-        mDatabaseOffline = FirebaseDatabase.getInstance().getReference("uploads");
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Aqwals");
+        mDatabaseOffline = FirebaseDatabase.getInstance().getReference("Aqwals");
 
 
 
@@ -80,11 +74,7 @@ public class AqwalActivity extends AppCompatActivity {
                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
 
                            mDatabaseOffline.keepSynced(true);
-
-
-                           String url= postSnapshot.getValue().toString();
-
-
+                           String url= postSnapshot.child("imageurl").getValue().toString();
                            mUploads.add(url);
 
 

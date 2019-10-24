@@ -1,6 +1,11 @@
 package com.nanodevlab.Wazaifahlebait;
 
+
+import android.app.Notification;
 import android.content.Intent;
+
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,9 +17,9 @@ import android.widget.LinearLayout;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
 import java.util.Timer;
 import java.util.TimerTask;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private int dotscount;
     private ImageView[] dots;
     ImageButton btnwazaif,btnaqwal,btnsetting,uploadbtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         uploadbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this,Submit_data.class);
+              Intent i=new Intent(MainActivity.this,Submit_data.class);
                 startActivity(i);
             }
         });
@@ -133,9 +139,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-
 
     public class MyTimerTask extends TimerTask {
 

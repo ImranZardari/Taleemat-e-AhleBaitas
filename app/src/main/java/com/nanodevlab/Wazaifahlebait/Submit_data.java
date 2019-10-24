@@ -19,10 +19,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
-
-import java.util.UUID;
-
 public class Submit_data extends AppCompatActivity {
 
     private static final int Pick_image_request = 1;
@@ -46,7 +42,7 @@ public class Submit_data extends AppCompatActivity {
         showImage = findViewById(R.id.imageview);
 
 
-        storageRef = FirebaseStorage.getInstance().getReference("submitedImages");
+        storageRef = FirebaseStorage.getInstance().getReference("AdminUploads");
 
 
         choosefile.setOnClickListener(new View.OnClickListener() {
@@ -75,17 +71,18 @@ public class Submit_data extends AppCompatActivity {
 
     private void UploadImage() {
         progress=new ProgressDialog(Submit_data.this);
-        progress.setTitle("Uploading File ...");
-        progress.setMessage("It Will Take A while ....");
+        progress.setTitle("Uploading File");
+        progress.setMessage("Please wait ....");
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progress.setCanceledOnTouchOutside(false);
         progress.show();
-        storageRef.child(UUID.randomUUID().toString()).putFile(imageuri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        storageRef.child("UserSubmission:"+System.currentTimeMillis() + "").putFile(imageuri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
                 progress.dismiss();
                 Toast.makeText(Submit_data.this, "Uploaded", Toast.LENGTH_SHORT).show();
+
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

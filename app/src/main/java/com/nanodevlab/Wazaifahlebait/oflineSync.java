@@ -1,6 +1,9 @@
 package com.nanodevlab.Wazaifahlebait;
 
 import android.app.Application;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.os.Build;
 
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.OkHttpDownloader;
@@ -11,7 +14,6 @@ public class oflineSync extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
 
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 
@@ -25,4 +27,5 @@ public class oflineSync extends Application {
 
 
     }
+
 }
