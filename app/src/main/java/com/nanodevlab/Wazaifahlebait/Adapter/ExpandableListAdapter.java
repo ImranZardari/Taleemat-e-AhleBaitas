@@ -66,7 +66,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
           LayoutInflater layoutInflater=(LayoutInflater)this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
           convertView = layoutInflater.inflate(R.layout.list_group,null);
       }
-        TextView lbllistHeader=convertView.findViewById(R.id.lbllistheader);
+        TextView lbllistHeader=convertView.findViewById(R.id.listItemHeader);
       lbllistHeader.setTypeface(null, Typeface.BOLD);
       lbllistHeader.setText(headerTitle);
       return convertView;
@@ -100,9 +100,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     public String getChildurl(int gp,int chpo){
 
-        String value=listHashMap.get(listDataHeader.get(gp)).get(chpo);
-               // listHashMap.get(gp).get(chpo);
-        return value;
+        return listHashMap.get(listDataHeader.get(gp)).get(chpo);
 
     }
 

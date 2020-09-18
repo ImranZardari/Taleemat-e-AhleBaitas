@@ -1,18 +1,50 @@
 <resources>
-    <string name="app_name">Wazaif e Ahle Bait as</string>
+    <string name="app_name">تعلیمات اھل بیت ع</string>
 
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
 
 
-    <!-- Strings related to Settings -->
+    <string name="title_activity_settings">Settings</string>
 
-    <!-- Example General settings -->
+    <!--ToolBar-->
+    <string name="action_settings">Settings</string>
 
-    <!-- Example settings for Data & Sync -->
+    <!--About-->
 
-    <!-- Example settings for Notifications -->
+    <!-- Settings-->
+    <string name="lang">Language</string>
+    <string name="content">Content</string>
+    <string name="show_trans">Show Translation</string>
+    <string name="wordbyword">Word By Word</string>
+    <string name="appearance">Appearance(Application Restart Required)</string>
+    <string name="arabic_font">Arabic Font</string>
+    <string name="arabic_font_size">Arabic Font Size</string>
+    <string name="trans_font_size">Translation Font Size</string>
+    <string name="other">Other</string>
+    <string name="screen_on">Keep Screen On</string>
+
+
+    <string name="message">کبھی انٹرنیٹ پرابلم یا کسی اور مسئلے کی وجہ سے کوئی لائیو زیارت کام نہین کرتی تو کچھ گھنٹے کے بعد دوبارہ چیک کیا کرین اور جلد دیکھینے کے لئے Mx Player ضرور انسٹال کرین ۔</string>
+
+    <!-- -->
+    <string name="rootWord">Root</string>
+
+    <string name="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</string>
+    <string name="about_app">اس ایپ میں آپ تعلیمات اسلام اور اھلبیت  کے متعلق معلومات حاصل کر سکتے ہیں جس میں قرآن مجید کے تین زبانوں میں ترجمے، احادیث، دعائیں،وظائف  اور بہترین اقوال شامل ہیں
+خود بھی پڑہیں اور دوسرے  \nمومنین کے لئے شیئر کریں
+\n\n
+علمی نظارت  مولانا محمدحسن لاشاری المشھدی
+\n\n
+جامعہ روحانیت سندھ مشھد مقدس
+</string>
+    <string name="lab_name">Powered By : Nano Dev Lab</string>
+    <string name="developer_name">Imran Ali</string>
+    <string name="about_developer">I am Programmer,Developer at Nano Dev Lab </string>
+    <string name="contact">Contact : +923063246643</string>
+    <string name="powered_by_nano_dev_lab">Powered By : Nano Dev Lab</string>
+    <string name="powered_by_jr">علمی نظارت \n\n مولانا محمد حسن لاشاری المشھدی</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
 
 
 </resources>

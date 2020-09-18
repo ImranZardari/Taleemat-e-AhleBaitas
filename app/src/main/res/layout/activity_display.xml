@@ -1,88 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Display">
+    android:background="@color/black"
+    tools:context=".Activities.AqwalDisplayActivity">
 
-
-
-    <com.google.android.gms.ads.AdView
-        android:layout_marginTop="2dp"
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adViewupper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-2669593833570116/9811074200"
-        android:layout_marginBottom="1dp">
-    </com.google.android.gms.ads.AdView>
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/imagepager"
+        android:id="@+id/displayImageViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/adViewupper"
-        android:scaleType="fitXY"
-        android:layout_above="@+id/bottom_linear"/>
-
-
+        android:layout_above="@+id/bottom_linear"
+        android:scaleType="fitXY" />
 
 
     <LinearLayout
         android:id="@+id/bottom_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="3"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="5dp"
         android:gravity="center_horizontal"
-        android:layout_above="@+id/adView">
-
-
+        android:orientation="horizontal"
+        android:weightSum="4">
 
 
         <ImageButton
-            android:id="@+id/save_btn"
+            android:id="@+id/saveBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="40dp"
-            android:background="@drawable/download"/>
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/download" />
 
         <ImageButton
-            android:id="@+id/sharebtn"
+            android:id="@+id/shareBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="40dp"
-            android:background="@drawable/share"
-            />
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/share" />
 
         <ImageButton
-            android:id="@+id/setwallpaper_btn"
+            android:id="@+id/setWallpaperBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/wallpaper"/>
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/wallpaper" />
+
+
+        <ImageButton
+            android:id="@+id/addFavBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_fav" />
 
     </LinearLayout>
-
-
-
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adView"
-        android:layout_marginTop="1dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        ads:adSize="BANNER"
-        android:layout_alignParentBottom="true"
-        ads:adUnitId="ca-app-pub-2669593833570116/8372774570"
-        >
-    </com.google.android.gms.ads.AdView>
-
-
 
 
 </RelativeLayout>
